@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  text-align: center;
+}
+
+/* HERO */
+.hero {
+  background: #1e40af;
+  color: white;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.tagline {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.event-date {
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 12px 25px;
+  background: #facc15;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* COUNTDOWN */
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 40px 0;
+}
+
+.time-box {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: 80px;
+}
+
+.time-box span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* SECTIONS */
+.about, .activities, .register {
+  padding: 40px 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* REGISTER */
+.register input {
+  padding: 10px;
+  width: 250px;
+  margin-top: 15px;
+}
+
+.register button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background: #1e40af;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#message {
+  margin-top: 10px;
+  color: green;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .countdown {
+    flex-wrap: wrap;
+  }
+}
